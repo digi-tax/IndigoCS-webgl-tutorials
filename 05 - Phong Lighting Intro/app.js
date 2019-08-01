@@ -12,7 +12,7 @@ var InitDemo = function () {
 					loadJSONResource('./Susan.json', function (modelErr, modelObj) {
 						if (modelErr) {
 							alert('Fatal error getting Susan model (see console)');
-							console.error(fsErr);
+							console.error(modelErr);
 						} else {
 							loadImage('./SusanTexture.png', function (imgErr, img) {
 								if (imgErr) {
